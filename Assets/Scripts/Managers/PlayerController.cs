@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     //private UIManager _uiManager;
-    private DialogueManager _dialogueManager;
+    //private DialogueManager _dialogueManager;
 
     public float _moveSpeed = 5f;
     public Vector2 _moveInput;
@@ -18,18 +18,18 @@ public class PlayerController : MonoBehaviour
     public GameObject _attackCollider;
     private bool _isAttacking = false;
 
-    [Header("Interaction")]
-    [SerializeField] private GameObject _debugCurrentInteractable;
-    public Image _fullCircle;
-    private IInteractable _targetInteractable;
-    private float _holdDuration = 1f;
-    private float _holdTimer = 0f;
-    private bool _isHolding = false;
-    private bool _canHold = true;
+    //[Header("Interaction")]
+    //[SerializeField] private GameObject _debugCurrentInteractable;
+    //public Image _fullCircle;
+    //private IInteractable _targetInteractable;
+    //private float _holdDuration = 1f;
+    //private float _holdTimer = 0f;
+    //private bool _isHolding = false;
+    //private bool _canHold = true;
 
-    public bool _hasKey = false;
+    //public bool _hasKey = false;
 
-    private LevelSwitch _levelSwitch;
+    //private LevelSwitch _levelSwitch;
 
     private Animator _animController;
     private float _animationSpeed = 1f;
@@ -135,7 +135,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnAttack()
     {
-        if (_dialogueManager.IsInDialogue) return;
+        //if (_dialogueManager.IsInDialogue) return;
 
         if (!_isAttacking)
             StartCoroutine(AttackCycle());

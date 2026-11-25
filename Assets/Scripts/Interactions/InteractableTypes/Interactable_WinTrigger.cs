@@ -6,9 +6,9 @@ public class Interactable_WinTrigger : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if(ServiceHub.Instance.PlayerController._hasKey)
-            ServiceHub.Instance.GameStateManager.SetState(GameState.Win);
-        else if (_notInteractableDialogue != null)
-            ServiceHub.Instance.DialogueManager.StartDialogue(_notInteractableDialogue);
+        //if(ServiceHub.Instance.PlayerController._hasKey)
+        //    ServiceHub.Instance.GameStateManager.SetState(GameState.Win);
+        //else if (_notInteractableDialogue != null)
+        //    ServiceHub.Instance.DialogueManager.StartDialogue(_notInteractableDialogue);
     }
 }

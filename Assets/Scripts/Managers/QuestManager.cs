@@ -98,7 +98,7 @@ public class QuestManager : MonoBehaviour
 
         if (completedQuest._givesKey)
         {
-            ServiceHub.Instance.PlayerController._hasKey = true;
+            //ServiceHub.Instance.PlayerController._hasKey = true;
         }
     }
 
